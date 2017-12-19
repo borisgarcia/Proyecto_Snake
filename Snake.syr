@@ -1,0 +1,1415 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Reading design: Snake.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Snake.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Snake"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg324
+
+---- Source Options
+Top Module Name                    : Snake
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/opt/Xilinx/Snake/Snake.v" into library work
+Parsing module <Snake>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "/opt/Xilinx/Snake/Snake.v" Line 33: Port CLK0 is not connected to this instance
+
+Elaborating module <Snake>.
+
+Elaborating module <DCM_SP(CLKFX_DIVIDE=8,CLKFX_MULTIPLY=2,CLKIN_PERIOD=10)>.
+WARNING:HDLCompiler:189 - "/opt/Xilinx/Snake/Snake.v" Line 34: Size mismatch in connection of port <CLKFB>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 94: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 95: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 96: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 97: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 99: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 100: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 101: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 102: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 114: Result of 10-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 115: Result of 10-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 117: Result of 10-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/Snake/Snake.v" Line 117: Assignment to f_fig_x ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 118: Result of 10-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/Snake/Snake.v" Line 118: Assignment to f_fig_y ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 126: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 168: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 173: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 192: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 260: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 266: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 272: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 277: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 284: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 291: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/opt/Xilinx/Snake/Snake.v" Line 321: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Snake>.
+    Related source file is "/opt/Xilinx/Snake/Snake.v".
+        snake_size = 10
+        init_x = 320
+        init_y = 240
+        food_size = 3
+        f_init_x = 100
+        f_init_y = 100
+    Found 8-bit register for signal <timer_t>.
+    Found 1-bit register for signal <disp_en>.
+    Found 10-bit register for signal <s_pos_x>.
+    Found 10-bit register for signal <s_pos_y>.
+    Found 10-bit register for signal <f_pos_x>.
+    Found 10-bit register for signal <f_pos_y>.
+    Found 400-bit register for signal <n0239[399:0]>.
+    Found 10-bit register for signal <countv_x>.
+    Found 10-bit register for signal <countv_y>.
+    Found 1-bit register for signal <vga_hs>.
+    Found 1-bit register for signal <vga_vs>.
+    Found 10-bit register for signal <cont_y>.
+    Found 10-bit register for signal <cont_x>.
+    Found 3-bit register for signal <vga_r>.
+    Found 3-bit register for signal <vga_g>.
+    Found 2-bit register for signal <vga_b>.
+    Found 7-bit register for signal <timer_2>.
+    Found 7-bit register for signal <timer_3>.
+    Found 10-bit register for signal <timer_b>.
+    Found 1-bit register for signal <reset>.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_122_OUT> created at line 298.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_126_OUT> created at line 298.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_130_OUT> created at line 299.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_134_OUT> created at line 299.
+    Found 10-bit subtractor for signal <f_pos_x[9]_GND_1_o_sub_181_OUT> created at line 329.
+    Found 10-bit subtractor for signal <f_pos_y[9]_GND_1_o_sub_186_OUT> created at line 342.
+    Found 10-bit adder for signal <r_s_pos_x> created at line 95.
+    Found 10-bit adder for signal <d_s_pos_y> created at line 97.
+    Found 10-bit adder for signal <r_f_pos_x> created at line 100.
+    Found 10-bit adder for signal <d_f_pos_y> created at line 102.
+    Found 8-bit adder for signal <timer_t[7]_GND_1_o_add_17_OUT> created at line 126.
+    Found 10-bit adder for signal <countv_x[9]_GND_1_o_add_25_OUT> created at line 168.
+    Found 10-bit adder for signal <countv_y[9]_GND_1_o_add_27_OUT> created at line 173.
+    Found 10-bit adder for signal <s_pos_y[9]_GND_1_o_add_102_OUT> created at line 266.
+    Found 10-bit adder for signal <s_pos_x[9]_GND_1_o_add_112_OUT> created at line 277.
+    Found 7-bit adder for signal <timer_2[6]_GND_1_o_add_117_OUT> created at line 284.
+    Found 7-bit adder for signal <timer_3[6]_GND_1_o_add_118_OUT> created at line 291.
+    Found 11-bit adder for signal <n0341> created at line 298.
+    Found 11-bit adder for signal <n0348> created at line 298.
+    Found 11-bit adder for signal <n0354> created at line 299.
+    Found 11-bit adder for signal <n0359> created at line 299.
+    Found 10-bit adder for signal <timer_b[9]_GND_1_o_add_174_OUT> created at line 321.
+    Found 10-bit adder for signal <f_pos_x[9]_GND_1_o_add_181_OUT> created at line 334.
+    Found 10-bit adder for signal <f_pos_y[9]_GND_1_o_add_184_OUT> created at line 338.
+    Found 10-bit subtractor for signal <l_s_pos_x> created at line 84.
+    Found 10-bit subtractor for signal <u_s_pos_y> created at line 86.
+    Found 10-bit subtractor for signal <l_f_pos_x> created at line 89.
+    Found 10-bit subtractor for signal <u_f_pos_y> created at line 91.
+    Found 5-bit subtractor for signal <s_fig_x> created at line 108.
+    Found 5-bit subtractor for signal <s_fig_y> created at line 109.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_98_OUT<9:0>> created at line 260.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_108_OUT<9:0>> created at line 272.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_60_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_61_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_62_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_63_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_64_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_65_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_66_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_67_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_68_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_69_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_70_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_71_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_72_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_73_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_74_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_75_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_76_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_77_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_78_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <s_fig_y[4]_X_1_o_Mux_79_o> created at line 231.
+    Found 1-bit 20-to-1 multiplexer for signal <GND_1_o_GND_1_o_equal_82_o> created at line 231.
+    Found 8-bit comparator greater for signal <PWR_1_o_timer_t[7]_LessThan_17_o> created at line 121
+    Found 10-bit comparator greater for signal <countv_x[9]_PWR_1_o_LessThan_25_o> created at line 167
+    Found 10-bit comparator lessequal for signal <countv_y[9]_PWR_1_o_LessThan_27_o> created at line 172
+    Found 10-bit comparator greater for signal <countv_x[9]_PWR_1_o_LessThan_37_o> created at line 183
+    Found 10-bit comparator greater for signal <PWR_1_o_countv_x[9]_LessThan_38_o> created at line 183
+    Found 10-bit comparator greater for signal <countv_y[9]_GND_1_o_LessThan_39_o> created at line 191
+    Found 10-bit comparator greater for signal <GND_1_o_countv_y[9]_LessThan_40_o> created at line 191
+    Found 10-bit comparator greater for signal <countv_x[9]_PWR_1_o_LessThan_45_o> created at line 207
+    Found 10-bit comparator greater for signal <countv_y[9]_GND_1_o_LessThan_46_o> created at line 207
+    Found 10-bit comparator greater for signal <cont_y[9]_GND_1_o_LessThan_49_o> created at line 216
+    Found 10-bit comparator greater for signal <cont_x[9]_GND_1_o_LessThan_50_o> created at line 216
+    Found 10-bit comparator greater for signal <GND_1_o_cont_y[9]_LessThan_51_o> created at line 216
+    Found 10-bit comparator greater for signal <PWR_1_o_cont_x[9]_LessThan_52_o> created at line 216
+    Found 10-bit comparator greater for signal <l_f_pos_x[9]_cont_x[9]_LessThan_53_o> created at line 223
+    Found 10-bit comparator greater for signal <cont_x[9]_r_f_pos_x[9]_LessThan_54_o> created at line 223
+    Found 10-bit comparator greater for signal <u_f_pos_y[9]_cont_y[9]_LessThan_55_o> created at line 223
+    Found 10-bit comparator greater for signal <cont_y[9]_d_f_pos_y[9]_LessThan_56_o> created at line 223
+    Found 10-bit comparator greater for signal <l_s_pos_x[9]_cont_x[9]_LessThan_57_o> created at line 230
+    Found 10-bit comparator greater for signal <cont_x[9]_r_s_pos_x[9]_LessThan_58_o> created at line 230
+    Found 10-bit comparator greater for signal <u_s_pos_y[9]_cont_y[9]_LessThan_59_o> created at line 230
+    Found 10-bit comparator greater for signal <cont_y[9]_d_s_pos_y[9]_LessThan_60_o> created at line 230
+    Found 10-bit comparator greater for signal <GND_1_o_s_pos_y[9]_LessThan_97_o> created at line 259
+    Found 10-bit comparator greater for signal <s_pos_y[9]_GND_1_o_LessThan_102_o> created at line 265
+    Found 10-bit comparator greater for signal <GND_1_o_s_pos_x[9]_LessThan_107_o> created at line 271
+    Found 10-bit comparator greater for signal <s_pos_x[9]_PWR_1_o_LessThan_112_o> created at line 276
+    Found 11-bit comparator greater for signal <GND_1_o_BUS_0012_LessThan_121_o> created at line 298
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_123_o> created at line 298
+    Found 11-bit comparator greater for signal <GND_1_o_BUS_0013_LessThan_125_o> created at line 298
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_127_o> created at line 298
+    Found 11-bit comparator greater for signal <GND_1_o_BUS_0014_LessThan_129_o> created at line 299
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_131_o> created at line 299
+    Found 11-bit comparator greater for signal <GND_1_o_BUS_0015_LessThan_133_o> created at line 299
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_135_o> created at line 299
+    Found 10-bit comparator greater for signal <n0155> created at line 301
+    Found 7-bit comparator greater for signal <timer_2[6]_PWR_1_o_LessThan_180_o> created at line 328
+    Found 7-bit comparator greater for signal <PWR_1_o_timer_2[6]_LessThan_184_o> created at line 337
+    Found 10-bit comparator lessequal for signal <n0178> created at line 347
+    Found 10-bit comparator lessequal for signal <n0181> created at line 351
+    Found 10-bit comparator lessequal for signal <n0184> created at line 355
+    Summary:
+	inferred  30 Adder/Subtractor(s).
+	inferred 524 D-type flip-flop(s).
+	inferred  39 Comparator(s).
+	inferred  49 Multiplexer(s).
+Unit <Snake> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 30
+ 10-bit adder                                          : 9
+ 10-bit addsub                                         : 2
+ 10-bit subtractor                                     : 6
+ 11-bit adder                                          : 4
+ 11-bit subtractor                                     : 4
+ 5-bit subtractor                                      : 2
+ 7-bit adder                                           : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 20
+ 1-bit register                                        : 4
+ 10-bit register                                       : 9
+ 2-bit register                                        : 1
+ 3-bit register                                        : 2
+ 400-bit register                                      : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 39
+ 10-bit comparator greater                             : 24
+ 10-bit comparator lessequal                           : 4
+ 11-bit comparator greater                             : 4
+ 32-bit comparator greater                             : 4
+ 7-bit comparator greater                              : 2
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 49
+ 1-bit 20-to-1 multiplexer                             : 21
+ 10-bit 2-to-1 multiplexer                             : 17
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 9
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <s_figure_19_274> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_273> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_272> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_271> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_270> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_269> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_268> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_267> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_266> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_265> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_264> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_263> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_262> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_261> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_260> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_259> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_258> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_257> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_256> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_255> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_254> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_253> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_252> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_251> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_250> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_299> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_298> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_297> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_296> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_295> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_294> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_293> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_292> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_291> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_290> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_289> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_288> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_287> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_286> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_285> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_284> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_283> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_282> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_281> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_280> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_279> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_278> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_277> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_276> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_275> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_224> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_223> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_222> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_221> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_220> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_219> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_218> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_217> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_216> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_215> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_214> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_213> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_212> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_211> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_210> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_209> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_208> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_207> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_206> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_205> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_204> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_203> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_202> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_201> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_200> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_249> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_248> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_247> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_246> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_245> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_244> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_243> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_242> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_241> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_240> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_239> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_238> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_237> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_236> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_235> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_234> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_233> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_232> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_231> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_230> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_229> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_228> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_227> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_226> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_225> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_374> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_373> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_372> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_371> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_370> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_369> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_368> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_367> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_366> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_365> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_364> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_363> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_362> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_361> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_360> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_359> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_358> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_357> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_356> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_355> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_354> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_353> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_352> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_351> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_350> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_399> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_398> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_397> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_396> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_395> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_394> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_393> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_392> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_391> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_390> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_389> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_388> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_387> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_386> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_385> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_384> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_383> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_382> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_381> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_380> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_379> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_378> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_377> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_376> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_375> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_324> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_323> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_322> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_321> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_320> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_319> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_318> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_317> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_316> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_315> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_314> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_313> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_312> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_311> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_310> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_309> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_308> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_307> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_306> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_305> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_304> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_303> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_302> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_301> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_300> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_349> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_348> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_347> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_346> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_345> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_344> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_343> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_342> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_341> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_340> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_339> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_338> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_337> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_336> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_335> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_334> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_333> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_332> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_331> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_330> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_329> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_328> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_327> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_326> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_325> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_74> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_73> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_72> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_71> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_70> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_69> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_68> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_67> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_66> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_65> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_64> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_63> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_62> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_61> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_60> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_59> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_58> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_57> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_56> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_55> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_54> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_53> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_52> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_51> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_50> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_99> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_98> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_97> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_96> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_95> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_94> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_93> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_92> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_91> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_90> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_89> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_88> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_87> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_86> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_85> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_84> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_83> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_82> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_81> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_80> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_79> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_78> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_77> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_76> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_75> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_24> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_23> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_22> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_21> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_20> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_19> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_18> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_17> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_16> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_15> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_14> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_13> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_12> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_11> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_10> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_9> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_8> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_7> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_6> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_5> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_4> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_3> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_2> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_1> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_0> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_49> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_48> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_47> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_46> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_45> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_44> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_43> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_42> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_41> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_40> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_39> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_38> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_37> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_36> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_35> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_34> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_33> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_32> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_31> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_30> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_29> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_28> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_27> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_26> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_25> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_174> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_173> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_172> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_171> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_170> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_169> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_168> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_167> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_166> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_165> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_164> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_163> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_162> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_161> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_160> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_159> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_158> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_157> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_156> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_155> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_154> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_153> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_152> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_151> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_150> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_199> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_198> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_197> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_196> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_195> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_194> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_193> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_192> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_191> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_190> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_189> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_188> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_187> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_186> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_185> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_184> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_183> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_182> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_181> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_180> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_179> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_178> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_177> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_176> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_175> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_124> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_123> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_122> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_121> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_120> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_119> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_118> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_117> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_116> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_115> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_114> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_113> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_112> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_111> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_110> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_109> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_108> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_107> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_106> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_105> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_104> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_103> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_102> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_101> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_100> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_149> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_148> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_147> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_146> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_145> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_144> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_143> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_142> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_141> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_140> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_139> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_138> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_137> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_136> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_135> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_134> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_133> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_132> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_131> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_130> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_129> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_128> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_127> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_126> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_125> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Snake>.
+The following registers are absorbed into accumulator <f_pos_y>: 1 register on signal <f_pos_y>.
+The following registers are absorbed into accumulator <timer_2>: 1 register on signal <timer_2>.
+The following registers are absorbed into accumulator <timer_3>: 1 register on signal <timer_3>.
+The following registers are absorbed into counter <countv_x>: 1 register on signal <countv_x>.
+The following registers are absorbed into counter <timer_t>: 1 register on signal <timer_t>.
+The following registers are absorbed into counter <timer_b>: 1 register on signal <timer_b>.
+The following registers are absorbed into counter <countv_y>: 1 register on signal <countv_y>.
+Unit <Snake> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 23
+ 10-bit adder                                          : 6
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 6
+ 11-bit adder                                          : 4
+ 11-bit subtractor                                     : 4
+ 5-bit subtractor                                      : 2
+# Counters                                             : 4
+ 10-bit up counter                                     : 3
+ 8-bit up counter                                      : 1
+# Accumulators                                         : 3
+ 10-bit updown loadable accumulator                    : 1
+ 7-bit up accumulator                                  : 2
+# Registers                                            : 462
+ Flip-Flops                                            : 462
+# Comparators                                          : 39
+ 10-bit comparator greater                             : 24
+ 10-bit comparator lessequal                           : 4
+ 11-bit comparator greater                             : 4
+ 32-bit comparator greater                             : 4
+ 7-bit comparator greater                              : 2
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 48
+ 1-bit 20-to-1 multiplexer                             : 21
+ 10-bit 2-to-1 multiplexer                             : 16
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <s_figure_19_274> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_273> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_272> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_271> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_270> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_269> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_268> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_267> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_266> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_265> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_264> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_263> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_262> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_261> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_260> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_259> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_258> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_257> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_256> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_255> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_254> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_253> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_252> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_251> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_250> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_299> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_298> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_297> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_296> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_295> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_294> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_293> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_292> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_291> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_290> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_289> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_288> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_287> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_286> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_285> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_284> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_283> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_282> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_281> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_280> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_279> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_278> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_277> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_276> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_275> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_224> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_223> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_222> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_221> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_220> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_219> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_218> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_217> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_216> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_215> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_214> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_213> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_212> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_211> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_210> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_209> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_208> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_207> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_206> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_205> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_204> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_203> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_202> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_201> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_200> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_249> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_248> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_247> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_246> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_245> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_244> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_243> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_242> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_241> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_240> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_239> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_238> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_237> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_236> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_235> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_234> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_233> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_232> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_231> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_230> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_229> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_228> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_227> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_226> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_225> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_374> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_373> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_372> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_371> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_370> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_369> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_368> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_367> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_366> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_365> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_364> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_363> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_362> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_361> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_360> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_359> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_358> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_357> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_356> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_355> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_354> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_353> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_352> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_351> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_350> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_399> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_398> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_397> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_396> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_395> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_394> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_393> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_392> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_391> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_390> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_389> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_388> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_387> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_386> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_385> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_384> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_383> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_382> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_381> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_380> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_379> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_378> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_377> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_376> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_375> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_324> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_323> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_322> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_321> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_320> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_319> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_318> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_317> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_316> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_315> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_314> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_313> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_312> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_311> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_310> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_309> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_308> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_307> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_306> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_305> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_304> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_303> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_302> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_301> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_300> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_349> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_348> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_347> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_346> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_345> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_344> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_343> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_342> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_341> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_340> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_339> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_338> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_337> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_336> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_335> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_334> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_333> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_332> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_331> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_330> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_329> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_328> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_327> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_326> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_325> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_74> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_73> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_72> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_71> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_70> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_69> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_68> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_67> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_66> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_65> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_64> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_63> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_62> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_61> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_60> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_59> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_58> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_57> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_56> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_55> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_54> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_53> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_52> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_51> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_50> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_99> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_98> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_97> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_96> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_95> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_94> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_93> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_92> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_91> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_90> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_89> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_88> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_87> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_86> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_85> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_84> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_83> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_82> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_81> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_80> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_79> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_78> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_77> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_76> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_75> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_24> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_23> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_22> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_21> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_20> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_19> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_18> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_17> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_16> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_15> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_14> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_13> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_12> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_11> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_10> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_9> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_8> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_7> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_6> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_5> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_4> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_3> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_2> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_1> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_0> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_49> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_48> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_47> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_46> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_45> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_44> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_43> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_42> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_41> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_40> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_39> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_38> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_37> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_36> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_35> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_34> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_33> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_32> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_31> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_30> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_29> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_28> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_27> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_26> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_25> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_174> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_173> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_172> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_171> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_170> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_169> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_168> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_167> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_166> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_165> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_164> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_163> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_162> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_161> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_160> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_159> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_158> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_157> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_156> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_155> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_154> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_153> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_152> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_151> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_150> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_199> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_198> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_197> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_196> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_195> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_194> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_193> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_192> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_191> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_190> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_189> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_188> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_187> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_186> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_185> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_184> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_183> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_182> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_181> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_180> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_179> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_178> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_177> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_176> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_175> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_124> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_123> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_122> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_121> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_120> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_119> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_118> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_117> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_116> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_115> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_114> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_113> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_112> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_111> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_110> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_109> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_108> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_107> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_106> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_105> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_104> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_103> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_102> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_101> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_100> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_149> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_148> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_147> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_146> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_145> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_144> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_143> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_142> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_141> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_140> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_139> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_138> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_137> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_136> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_135> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_134> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_133> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_132> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_131> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_130> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_129> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_128> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_127> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_126> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_figure_19_125> (without init value) has a constant value of 1 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <vga_g_r_0> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <vga_g_r_2> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <vga_b_r_1> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <vga_r_r_2> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Snake> ...
+WARNING:Xst:1710 - FF/Latch <s_pos_y_9> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cont_y_9> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <timer_2_0> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <timer_3_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Snake, actual ratio is 11.
+FlipFlop s_pos_x_1 has been replicated 2 time(s)
+FlipFlop s_pos_x_2 has been replicated 2 time(s)
+FlipFlop s_pos_x_3 has been replicated 2 time(s)
+FlipFlop s_pos_x_4 has been replicated 2 time(s)
+FlipFlop s_pos_x_5 has been replicated 2 time(s)
+FlipFlop s_pos_x_6 has been replicated 2 time(s)
+FlipFlop s_pos_y_0 has been replicated 1 time(s)
+FlipFlop s_pos_y_1 has been replicated 2 time(s)
+FlipFlop s_pos_y_2 has been replicated 2 time(s)
+FlipFlop s_pos_y_3 has been replicated 1 time(s)
+FlipFlop s_pos_y_4 has been replicated 1 time(s)
+FlipFlop s_pos_y_5 has been replicated 1 time(s)
+FlipFlop s_pos_y_6 has been replicated 1 time(s)
+FlipFlop s_pos_y_7 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 139
+ Flip-Flops                                            : 139
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Snake.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 767
+#      GND                         : 1
+#      INV                         : 12
+#      LUT1                        : 34
+#      LUT2                        : 40
+#      LUT3                        : 49
+#      LUT4                        : 199
+#      LUT5                        : 98
+#      LUT6                        : 139
+#      MUXCY                       : 132
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 58
+# FlipFlops/Latches                : 139
+#      FD                          : 46
+#      FDE                         : 49
+#      FDR                         : 14
+#      FDRE                        : 29
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 15
+#      IBUF                        : 4
+#      IBUFG                       : 1
+#      OBUF                        : 10
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             139  out of  11440     1%  
+ Number of Slice LUTs:                  571  out of   5720     9%  
+    Number used as Logic:               571  out of   5720     9%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    607
+   Number with an unused Flip Flop:     468  out of    607    77%  
+   Number with an unused LUT:            36  out of    607     5%  
+   Number of fully used LUT-FF pairs:   103  out of    607    16%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    200     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK100MHz                          | DCM_SP:CLKFX           | 139   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.399ns (Maximum Frequency: 416.884MHz)
+   Minimum input arrival time before clock: 4.575ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK100MHz'
+  Clock period: 2.399ns (frequency: 416.884MHz)
+  Total number of paths / destination ports: 129644 / 260
+-------------------------------------------------------------------------
+Delay:               9.595ns (Levels of Logic = 7)
+  Source:            s_pos_x_5_1 (FF)
+  Destination:       vga_r_r_1 (FF)
+  Source Clock:      CLK100MHz rising 0.2X
+  Destination Clock: CLK100MHz rising 0.2X
+
+  Data Path: s_pos_x_5_1 to vga_r_r_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   0.525   1.463  s_pos_x_5_1 (s_pos_x_5_1)
+     LUT6:I0->O           11   0.254   1.039  Msub_l_s_pos_x_cy<6>11 (Msub_l_s_pos_x_cy<6>)
+     LUT5:I4->O            2   0.254   1.156  Msub_GND_1_o_GND_1_o_sub_122_OUT_xor<9>11 (GND_1_o_GND_1_o_sub_122_OUT<9>)
+     LUT5:I0->O            0   0.254   0.000  Mcompar_GND_1_o_GND_1_o_LessThan_123_o_lutdi4 (Mcompar_GND_1_o_GND_1_o_LessThan_123_o_lutdi4)
+     MUXCY:DI->O           4   0.393   1.032  Mcompar_GND_1_o_GND_1_o_LessThan_123_o_cy<4> (Mcompar_GND_1_o_GND_1_o_LessThan_123_o_cy<4>)
+     LUT3:I0->O           13   0.235   1.098  GND_1_o_GND_1_o_OR_37_o_SW0 (N32)
+     LUT6:I5->O           21   0.254   1.310  GND_1_o_GND_1_o_OR_37_o (GND_1_o_GND_1_o_OR_37_o)
+     LUT6:I5->O            1   0.254   0.000  Mmux_GND_1_o_GND_1_o_mux_193_OUT2 (GND_1_o_GND_1_o_mux_193_OUT<1>)
+     FDS:D                     0.074          vga_r_r_1
+    ----------------------------------------
+    Total                      9.595ns (2.497ns logic, 7.098ns route)
+                                       (26.0% logic, 74.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK100MHz'
+  Total number of paths / destination ports: 204 / 82
+-------------------------------------------------------------------------
+Offset:              4.575ns (Levels of Logic = 3)
+  Source:            down (PAD)
+  Destination:       s_pos_y_3 (FF)
+  Destination Clock: CLK100MHz rising 0.2X
+
+  Data Path: down to s_pos_y_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.328   1.469  down_IBUF (down_IBUF)
+     LUT6:I1->O            3   0.254   1.196  Mmux_GND_1_o_GND_1_o_mux_115_OUT1021 (Mmux_GND_1_o_GND_1_o_mux_115_OUT102)
+     LUT5:I0->O            2   0.254   0.000  Mmux_GND_1_o_GND_1_o_mux_115_OUT41 (GND_1_o_GND_1_o_mux_115_OUT<3>)
+     FDE:D                     0.074          s_pos_y_3
+    ----------------------------------------
+    Total                      4.575ns (1.910ns logic, 2.665ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK100MHz'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            vga_r_r_1 (FF)
+  Destination:       vga_r<1> (PAD)
+  Source Clock:      CLK100MHz rising 0.2X
+
+  Data Path: vga_r_r_1 to vga_r<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.525   0.681  vga_r_r_1 (vga_r_r_1)
+     OBUF:I->O                 2.912          vga_r_1_OBUF (vga_r<1>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK100MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK100MHz      |    9.595|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 10.94 secs
+ 
+--> 
+
+
+Total memory usage is 390056 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  833 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

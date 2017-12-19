@@ -1,0 +1,53 @@
+xst -intstyle ise -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -ifn "/opt/Xilinx/Snake/Snake.xst" -ofn "/opt/Xilinx/Snake/Snake.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc "/opt/Xilinx/Proyecto/map (1).ucf" -p xc6slx9-csg324-2 Snake.ngc Snake.ngd  
+map -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -filter /opt/Xilinx/Snake/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -ifn "/opt/Xilinx/Snake/Snake.xst" -ofn "/opt/Xilinx/Snake/Snake.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc "/opt/Xilinx/Proyecto/map (1).ucf" -p xc6slx9-csg324-2 Snake.ngc Snake.ngd  
+map -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -filter /opt/Xilinx/Snake/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -ifn "/opt/Xilinx/Snake/Snake.xst" -ofn "/opt/Xilinx/Snake/Snake.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc "map (1).ucf" -p xc6slx9-csg324-2 Snake.ngc Snake.ngd  
+map -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -filter /opt/Xilinx/Snake/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf {map (1).ucf} 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -ifn "/opt/Xilinx/Snake/Snake.xst" -ofn "/opt/Xilinx/Snake/Snake.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc "map (1).ucf" -p xc6slx9-csg324-2 Snake.ngc Snake.ngd  
+map -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -filter /opt/Xilinx/Snake/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf {map (1).ucf} 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -ifn "/opt/Xilinx/Snake/Snake.xst" -ofn "/opt/Xilinx/Snake/Snake.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc "map (1).ucf" -p xc6slx9-csg324-2 Snake.ngc Snake.ngd  
+map -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -filter /opt/Xilinx/Snake/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf {map (1).ucf} 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -ifn "/opt/Xilinx/Snake/Snake.xst" -ofn "/opt/Xilinx/Snake/Snake.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc "map (1).ucf" -p xc6slx9-csg324-2 Snake.ngc Snake.ngd  
+map -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -ifn "/opt/Xilinx/Snake/Snake.xst" -ofn "/opt/Xilinx/Snake/Snake.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc "map (1).ucf" -p xc6slx9-csg324-2 Snake.ngc Snake.ngd  
+map -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -filter /opt/Xilinx/Snake/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf {map (1).ucf} 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -ifn "/opt/Xilinx/Snake/Snake.xst" -ofn "/opt/Xilinx/Snake/Snake.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc "map (1).ucf" -p xc6slx9-csg324-2 Snake.ngc Snake.ngd  
+map -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -filter /opt/Xilinx/Snake/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf {map (1).ucf} 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -ifn "/opt/Xilinx/Snake/Snake.xst" -ofn "/opt/Xilinx/Snake/Snake.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc "map (1).ucf" -p xc6slx9-csg324-2 Snake.ngc Snake.ngd  
+map -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -filter "/opt/Xilinx/Snake/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -filter /opt/Xilinx/Snake/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf {map (1).ucf} 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f Snake.ut Snake.ncd 
